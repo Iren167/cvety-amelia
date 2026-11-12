@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Амелия · букеты с доставкой к часу</title>
+<meta name="description" content="Букеты с доставкой к часу в Ярославле: фото собранного букета перед отправкой, состав и цена финальные при заказе, свадебная флористика и цветы в офис.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Амелия">
+<meta property="og:title" content="Букеты с доставкой по Ярославлю к вашему часу">
+<meta property="og:description" content="Фото собранного букета перед отправкой: едет то, что на фото. Состав и цена финальные при подтверждении заказа, курьер в оговорённый интервал.">
+<meta property="og:url" content="amelia-cvety.ru">
+<meta property="og:image" content="amelia-cvety.ru/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Golos+Text:wght@400;500;600&family=Marck+Script&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%2384535f%27/%3E%3Cpath d=%27M16 26c0-8 3-13 10-16-1 8-4 13-10 16z%27 fill=%27%23f6eef0%27/%3E%3Cpath d=%27M16 26c0-6-2-10-7-12 1 6 3 10 7 12z%27 fill=%27%23f6eef0%27 opacity=%27.6%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vibe.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Florist","name":"Амелия","description":"Букеты с доставкой к часу: фото собранного букета перед отправкой, состав и цена финальные при заказе, свадебная флористика, цветы в офис.","url":"amelia-cvety.ru","image":"amelia-cvety.ru/assets/og.jpg","telephone":"+7 (4852) 000-00-00","openingHours":"ежедневно 8:00–22:00","areaServed":"Ярославль","address":{"@type":"PostalAddress","streetAddress":"ул. Кооперативная, 8","addressLocality":"Ярославль","addressCountry":"RU"},"priceRange":"от 2 900 ₽"}
+</script>
+<style>
+  /* ---- тема: шесть цветов, два шрифта (палитра А «пудра + лес», светлая) ---- */
+  .v-page {
+    --v-canvas: #f6eef0; --v-surface: #fffafb;
+    --v-ink: #3a2430; --v-ink-soft: #6c525d;          /* 5,3:1 на холсте */
+    --v-accent: #84535f; --v-accent-ink: #fff7f9;     /* 5,6:1 на холсте, 5,7:1 текст на кнопке */
+    --v-font-display: "Jost", "Segoe UI", system-ui, sans-serif;
+    --v-font-text: "Golos Text", "Segoe UI", system-ui, sans-serif;
+    --x-script: "Marck Script", "Segoe Script", cursive;
+    --x-mauve: #7b5663; --x-mauve-d: #5f3f4b; --x-rose: #e9cdd5;
+    --v-shadow-color: 84 40 62;
+    /* светлый холст: тени легче, кромка карточек световая, а не тёмная */
+    --v-e1: 0 1px 2px rgb(var(--v-shadow-color) / .08), 0 8px 22px rgb(var(--v-shadow-color) / .10);
+    --v-e2: 0 2px 6px rgb(var(--v-shadow-color) / .10), 0 22px 54px rgb(var(--v-shadow-color) / .16);
+    --v-edge: inset 0 1px 0 rgb(255 255 255 / .7);
+    --v-radius: 12px;
+    --v-section: clamp(3.5rem, 8vw, 7rem);
+    --v-display-weight: 500;
+    --v-track-tight: 0;
+    --v-track-normal: 0;
+  }
+  html, body { background: #f6eef0; }
+  .v-page { font-feature-settings: "lnum" 1; }
+  .v-page .v-display { font-weight: 500; }
+  .v-page .v-display--lg { font-size: clamp(2.4rem, 1.4rem + 3vw, 4rem); }
+  .v-page .v-display--md { font-size: clamp(2.1rem, 1.3rem + 2.3vw, 3.2rem); }
+  .v-page h3, .v-page .poka__rows h3, .v-page .price__rows h3 { font-weight: 600; }
+  .v-page .v-display--xl { line-height: 1.02; }
+  .v-page .v-lede { font-weight: 400; line-height: 1.45; }
+  .v-page .v-label { font-weight: 500; }
+  .v-page .v-btn { font-size: var(--v-t-base); font-weight: 600; }
+  .v-page [id] { scroll-margin-top: 5rem; }
+
+  /* ---- шапка: прозрачная на первом экране, плотная после ------------------- */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; justify-content: space-between;
+    padding: var(--v-3) var(--v-gutter); gap: var(--v-4);
+    background: linear-gradient(to bottom, rgb(246 238 240 / .85), rgb(246 238 240 / 0));
+    transition: background-color .3s var(--v-ease-out), box-shadow .3s var(--v-ease-out); }
+  .bar.is-scrolled { background: rgb(246 238 240 / .88); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--v-hair); }
+  .bar__mark { font-family: var(--v-font-display); font-size: var(--v-t-lg); letter-spacing: .02em; text-decoration: none;
+    display: inline-flex; align-items: center; gap: .45em; min-height: 44px; white-space: nowrap; }
+  .bar__mark i { width: .62em; height: .92em; border-radius: 100% 0 100% 0; background: var(--v-accent); display: inline-block; transform: rotate(-24deg); }
+  .bar__right { display: flex; align-items: center; gap: var(--v-4); }
+  .bar__tel { text-decoration: none; font-weight: 500; font-size: var(--v-t-sm); color: var(--v-ink); display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--v-2); }
+  @media (max-width: 700px) {
+    .bar__tel { display: none; }
+    .bar .v-btn { padding: 0 1em; min-height: 44px; font-size: .9rem; }
+    .bar__right { gap: var(--v-2); }
+    .bar__mark { font-size: 1.15rem; }
+  }
+  @media (max-width: 860px) { .bar.is-scrolled { background: rgb(246 238 240 / .94); } }
+
+  /* ---- hero: розовый градиент и букет справа (как на пине), края фото растворяются ---- */
+  .hero__bg { position: absolute; inset: 0; z-index: 0;
+    background: radial-gradient(70% 90% at 78% 35%, #f3dce3 0%, transparent 70%), linear-gradient(115deg, #f8eaee 0%, #ecd0d8 48%, #d9aebb 100%); }
+  .hero__back img { position: absolute; max-width: none; right: 0; top: -4%; height: 112%; width: auto; aspect-ratio: 2 / 3; object-fit: cover; display: block;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 30%); mask-image: linear-gradient(to right, transparent 0%, #000 30%); }
+  .hero__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(to right, rgb(246 238 240 / .0) 40%, rgb(217 174 187 / .18) 100%); }
+  .hero__floor { position: absolute; inset: auto 0 0 0; height: 22%; z-index: 2; pointer-events: none;
+    background: linear-gradient(to top, var(--v-canvas) 0%, rgb(246 238 240 / .5) 45%, transparent 100%); }
+  .hero__card { --r: clamp(1.5rem, 4vw, 5rem); }
+  .hero__card .chip { position: absolute; right: var(--r); bottom: clamp(6rem, 16vh, 9rem); display: flex; align-items: center; gap: .8rem; max-width: 19rem; padding: .7rem 1rem .7rem .7rem;
+    border-radius: 16px; background: rgb(255 250 251 / .72); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: 0 18px 40px rgb(84 40 62 / .18), var(--v-edge); }
+  .hero__card .chip img { width: 56px; height: 72px; object-fit: cover; border-radius: 10px; flex: none; }
+  .hero__card .chip b { display: block; font-weight: 600; font-size: var(--v-t-sm); color: var(--v-ink); line-height: 1.25; }
+  .hero__card .chip span { display: block; font-size: var(--v-t-xs); color: var(--v-ink-soft); line-height: 1.35; margin-top: .15rem; }
+  .hero__copy { bottom: clamp(5rem, 14vh, 9rem); max-width: min(44rem, 54vw); }
+  .hero__label { display: block; margin-bottom: var(--v-3); color: var(--v-accent); font-family: var(--x-script); font-size: clamp(1.7rem, 1.2rem + 1.4vw, 2.6rem); letter-spacing: 0; text-transform: none; font-weight: 400; line-height: 1.1; }
+  .hero__copy .v-display { font-size: clamp(2.6rem, 1.2rem + 3.6vw, 4.6rem); max-width: 14ch; line-height: 1; }
+  .hero__copy .v-lede { margin-top: var(--v-5); color: var(--v-ink); max-width: 36ch; }
+  .hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  .hero__tel { text-decoration: none; color: var(--v-ink); font-size: var(--v-t-sm); display: inline-flex; align-items: center; min-height: 44px; gap: .35em; }
+  .hero__tel b { font-weight: 500; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  @media (max-height: 760px) and (min-width: 861px) { .hero__copy .v-display { font-size: clamp(2.4rem, 1rem + 3vw, 3.4rem); } .hero__copy { bottom: clamp(3.5rem, 10vh, 6rem); } }
+  @media (max-width: 860px) {
+    .hero__bg { background: linear-gradient(180deg, #f8eaee 0%, #ecd0d8 55%, #d9aebb 100%); }
+    .hero__back img { right: 0; left: 0; margin: 0 auto; top: auto; bottom: -6%; height: 64%; width: 100%; aspect-ratio: auto; object-position: 50% 28%;
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 26%); mask-image: linear-gradient(to bottom, transparent 0%, #000 26%); }
+    .hero__scrim { background: none; }
+    .hero__floor { height: 10%; }
+    .hero__card .chip { left: 5vw; right: 5vw; max-width: none; bottom: 5vh; padding: .55rem .8rem .55rem .55rem; }
+    .hero__card .chip img { width: 44px; height: 56px; }
+    .hero__copy { top: clamp(5.2rem, 10vh, 6.5rem); bottom: auto; max-width: none; }
+    .hero__copy .v-display { font-size: clamp(2.3rem, 9vw, 3rem); max-width: none; }
+    .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-3); max-width: 30ch; }
+    .hero__cta { margin-top: var(--v-4); gap: var(--v-2) var(--v-5); }
+  }
+
+  /* ---- повод бывает один раз: строки-определения и поворот ------------------- */
+  .poka__head { max-width: 58rem; margin-bottom: var(--v-7); }
+  .poka__head .v-body { margin-top: var(--v-4); }
+  .poka__rows li { display: grid; grid-template-columns: minmax(14rem, .8fr) 1.6fr; gap: var(--v-2) var(--v-8); padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); align-items: start; }
+  .poka__rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .poka__rows h3 { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-xl); line-height: 1.12; letter-spacing: 0; text-wrap: balance; }
+  .poka__rows p { color: var(--v-ink-soft); max-width: 58ch; text-wrap: pretty; }
+  .turn { margin-top: var(--v-7); display: grid; grid-template-columns: minmax(14rem, .8fr) 1.6fr; gap: var(--v-2) var(--v-8); align-items: start;
+    padding: var(--v-6); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e1), var(--v-edge); }
+  .turn .v-label { color: var(--v-accent); padding-top: .4em; }
+  .turn__text { font-family: var(--v-font-display); font-size: var(--v-t-xl); line-height: 1.25; letter-spacing: 0; text-wrap: pretty; max-width: 32ch; }
+  @media (max-width: 860px) {
+    .poka__rows li, .turn { grid-template-columns: 1fr; gap: var(--v-2); }
+    .poka__rows h3 { font-size: var(--v-t-lg); }
+    .turn { padding: var(--v-5); }
+    .turn__text { font-size: var(--v-t-lg); }
+  }
+
+  /* ---- фирменный ход 1: букет собирается веером ------------------------------ */
+  .sb { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto 1fr auto; column-gap: var(--v-8); height: 100%;
+    padding: clamp(4.5rem, 12vh, 7rem) var(--v-gutter) clamp(2.5rem, 8vh, 5rem); }
+  .sb__head { grid-column: 1; max-width: 34rem; }
+  .sb__head .v-label { display: block; margin-bottom: var(--v-3); color: var(--v-accent); }
+  .sb__rep { grid-column: 1; grid-row: 2; position: relative; align-self: center; min-height: 12rem; }
+  .sb__rep > div { position: absolute; left: 0; top: 0; max-width: 32rem; }
+  .sb__step { display: inline-flex; align-items: center; gap: .55em; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); font-weight: 500; margin-bottom: var(--v-3); }
+  .sb__step i { width: .6em; height: .6em; border-radius: 50%; background: var(--v-accent); }
+  .sb__rep h3 { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-2xl); line-height: 1.05; letter-spacing: 0; text-wrap: balance; margin-bottom: var(--v-3); }
+  .sb__rep p { color: var(--v-ink-soft); max-width: 44ch; text-wrap: pretty; }
+  .sb__rep p b { color: var(--v-ink); font-weight: 500; }
+  .sb__after { grid-column: 1; grid-row: 3; display: flex; align-items: center; gap: var(--v-5); flex-wrap: wrap; }
+  .sb__hint { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 34ch; }
+  .fan { grid-column: 2; grid-row: 1 / -1; position: relative; align-self: center; justify-self: center; width: min(100%, 66vh); aspect-ratio: 1 / 1; }
+  /* карточка: угол a0 в стопке → a1 в веере, сдвиг tx – чтобы цветы задних карточек не прятались за передней;
+     k – доля раскрытия своей карточки; w – выход готового букета. Ось вращения далеко под карточкой (250 %): веер идёт дугой, низ карточек расходится */
+  .fan__card { --k: clamp(0, calc((var(--v-p, 0) - var(--s)) / .3), 1); --w: clamp(0, calc((var(--v-p, 0) - .58) / .24), 1);
+    position: absolute; left: 27%; bottom: 6%; width: 46%; aspect-ratio: 3 / 4; transform-origin: 50% 250%; /* left = (100 − 46) / 2: у figure margin обнулён движком, центрируем через left */
+    border-radius: var(--v-radius); overflow: hidden; background: var(--v-surface); box-shadow: 0 24px 48px rgb(84 40 62 / .18), var(--v-edge);
+    transform: translateX(calc(var(--k) * var(--tx))) rotate(calc(var(--a0) * (1 - var(--k)) + var(--a1) * var(--k))) translateY(calc(var(--k) * -6% + var(--w) * 5%));
+    opacity: calc(1 - .35 * clamp(0, calc(var(--w) * 4), 1)); will-change: transform, opacity; }
+  .fan__card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .fan__card figcaption { position: absolute; left: var(--v-4); right: var(--v-4); bottom: var(--v-4); font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink);
+    opacity: calc(var(--k) * clamp(0, calc(1 - var(--w) * 6), 1)); text-shadow: 0 1px 8px rgb(255 250 251 / .9), 0 0 2px rgb(255 250 251 / .9); }
+  .fan__card--1 { --s: .02; --a0: 0deg; --a1: -9deg; --tx: -17%; z-index: 5; }
+  .fan__card--2 { --s: .08; --a0: .5deg; --a1: -4.5deg; --tx: -8%; z-index: 4; }
+  .fan__card--3 { --s: .14; --a0: 0deg; --a1: 0deg; --tx: 0%; z-index: 3; }
+  .fan__card--4 { --s: .20; --a0: -.5deg; --a1: 4.5deg; --tx: 8%; z-index: 2; }
+  .fan__card--5 { --s: .26; --a0: -1deg; --a1: 9deg; --tx: 17%; z-index: 1; }
+  .fan__card--2, .fan__card--3, .fan__card--4 { opacity: 1; } /* средние карточка под шторкой остаётся плотной, без просвета */
+  .fan__card--wrap { --k: 1; z-index: 4; transform-origin: 50% 50%; transform: scale(calc(.94 + .06 * var(--w))); opacity: 1; clip-path: inset(calc((1 - var(--w)) * 100%) 0 0 0); } /* шторка снизу вверх: без полупрозрачного наложения карточек */
+  .fan__card--wrap figcaption { opacity: clamp(0, calc((var(--w) - .3) * 3), 1); }
+  .fan__legend { position: absolute; left: 0; right: 0; bottom: -1.6rem; text-align: center; font-size: var(--v-t-xs); color: var(--v-ink-soft); letter-spacing: var(--v-track-wide); text-transform: uppercase; }
+  @media (max-width: 1100px) { .sb { column-gap: var(--v-6); } .sb__rep h3 { font-size: var(--v-t-xl); } }
+  @media (max-width: 860px) {
+    .sb { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr auto; row-gap: var(--v-3); padding: clamp(4.5rem, 11vh, 6rem) var(--v-gutter) clamp(1.5rem, 5vh, 3rem); }
+    .sb__head { max-width: none; }
+    .sb__head .v-label { display: none; }
+    .sb__head .v-display { font-size: var(--v-t-xl); }
+    .fan { grid-column: 1; grid-row: 2; width: min(100%, 40vh); aspect-ratio: 4 / 3; align-self: start; }
+    .fan__card { bottom: 0; }
+    .fan__card--1 { --a1: -7deg; --tx: -14%; } .fan__card--5 { --a1: 7deg; --tx: 14%; } .fan__card--2 { --a1: -3.5deg; } .fan__card--4 { --a1: 3.5deg; }
+    .fan__card figcaption { display: none; }
+    .fan__legend { display: none; }
+    .sb__rep { grid-row: 3; align-self: start; min-height: 9rem; }
+    .sb__rep h3 { font-size: var(--v-t-lg); margin-bottom: var(--v-2); }
+    .sb__rep p { font-size: var(--v-t-sm); }
+    .sb__after { grid-row: 4; }
+    .sb__hint { display: none; }
+  }
+  @media (max-width: 600px) and (max-height: 760px) { .fan { width: min(100%, 34vh); } .sb__after { display: none; } }
+
+  /* ---- сколько стоит: три формата строками, условия рядом --------------------- */
+  .price { display: grid; grid-template-columns: .8fr 1.4fr; gap: var(--v-9); align-items: start; }
+  .price__head .v-body { color: var(--v-ink-soft); margin-top: var(--v-4); }
+  .price__rows li { display: grid; grid-template-columns: 1fr auto; gap: var(--v-2) var(--v-6); padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); align-items: start; }
+  .price__rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .price__rows h3 { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-xl); line-height: 1.12; letter-spacing: 0; }
+  .price__rows p { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 44ch; }
+  .price__rows .sum { grid-column: 2; grid-row: 1 / span 2; font-family: var(--v-font-display); font-size: var(--v-t-xl); line-height: 1.1; color: var(--v-accent); text-align: right; white-space: nowrap; }
+  .price__rows .sum small { display: block; font-family: var(--v-font-text); font-weight: 500; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); margin-top: .35em; }
+  .price__terms { margin-top: var(--v-6); display: grid; gap: var(--v-3); }
+  .price__terms li { display: grid; grid-template-columns: 11rem 1fr; gap: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .price__terms b { color: var(--v-ink); font-weight: 500; }
+  .price > * { min-width: 0; }
+  @media (max-width: 1000px) {
+    .price { grid-template-columns: 1fr; gap: var(--v-6); }
+    .price__rows li { grid-template-columns: 1fr; }
+    .price__rows .sum { grid-column: 1; grid-row: auto; text-align: left; white-space: normal; margin-top: var(--v-2); }
+    .price__terms li { grid-template-columns: 1fr; gap: var(--v-1); }
+  }
+
+  /* ---- фирменный ход 2: часы доставки ----------------------------------------- */
+  .kc__img img { width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 60% 50%; }
+  .kc__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(100deg, rgb(246 238 240 / .95) 0%, rgb(246 238 240 / .86) 40%, rgb(246 238 240 / .38) 66%, rgb(246 238 240 / .08) 100%); }
+  .kc__img img { filter: saturate(.85) brightness(1.03); object-position: 30% 50%; }
+  .clock__mark b { background: rgb(255 250 251 / .88); padding: .15em .6em; border-radius: 999px; }
+  .kc { position: absolute; inset: 0; z-index: 3; display: grid; grid-template-columns: 1.1fr .9fr; column-gap: var(--v-8); align-items: center;
+    padding: clamp(4.5rem, 12vh, 7rem) var(--v-gutter) clamp(2.5rem, 8vh, 5rem); }
+  .kc__copy { max-width: 36rem; }
+  .kc__copy .v-label { display: block; margin-bottom: var(--v-3); color: var(--v-accent); }
+  .kc__copy .v-display--lg { font-size: clamp(2rem, 1.3rem + 2.6vw, 3.6rem); margin-bottom: var(--v-6); }
+  .kc__rep { position: relative; min-height: 11rem; }
+  .kc__rep > div { position: absolute; left: 0; top: 0; max-width: 32rem; }
+  .kc__rep h3 { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-xl); line-height: 1.12; letter-spacing: 0; margin-bottom: var(--v-3); text-wrap: balance; }
+  .kc__rep p { color: var(--v-ink); opacity: .9; max-width: 42ch; text-wrap: pretty; }
+  .clock { position: relative; justify-self: center; align-self: end; margin: 0 3rem 2.6rem 0; width: min(100%, 40vh, 380px); aspect-ratio: 1 / 1; border-radius: 50%;
+    background: rgb(246 238 240 / .86); box-shadow: inset 0 0 0 2px var(--v-hair-strong), var(--v-e2); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+  .clock__tick { position: absolute; left: 50%; top: 4%; width: 2px; height: 5%; margin-left: -1px; background: var(--v-hair-strong); transform-origin: 50% 920%; transform: rotate(var(--deg)); }
+  .clock__tick--big { background: var(--v-ink); height: 7%; transform-origin: 50% 657%; }
+  .clock__mark { position: absolute; inset: 0; transform: rotate(var(--deg)); pointer-events: none; }
+  .clock__mark i { position: absolute; left: 50%; top: 7.5%; width: .9rem; height: .9rem; margin-left: -.45rem; border-radius: 50%;
+    background: var(--v-accent); box-shadow: 0 0 0 0 rgb(132 83 95 / .45); transform: scale(calc(.55 + .45 * var(--on))); opacity: calc(.4 + .6 * var(--on)); }
+  .clock__mark b { position: absolute; left: 50%; top: -2.4rem; transform: translateX(-50%) rotate(calc(-1 * var(--deg))); font-family: var(--v-font-text); font-weight: 500; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; white-space: nowrap;
+    color: var(--v-ink); opacity: calc(.55 + .45 * var(--on)); }
+  .clock__mark--photo { --deg: 60deg; --on: clamp(0, calc((var(--v-p, 0) - .6) * 14), 1); }
+  .clock__mark--door { --deg: 90deg; --on: clamp(0, calc((var(--v-p, 0) - .92) * 14), 1); }
+  .clock__hand { position: absolute; left: 50%; bottom: 50%; transform-origin: 50% 100%; border-radius: 999px; }
+  .clock__hand--h { width: 5px; height: 30%; margin-left: -2.5px; background: var(--v-ink); transform: rotate(calc(var(--v-p, 0) * 90deg)); }
+  .clock__hand--m { width: 3px; height: 42%; margin-left: -1.5px; background: var(--v-accent); transform: rotate(calc(var(--v-p, 0) * 1080deg)); }
+  .clock__pin { position: absolute; left: 50%; top: 50%; width: 12px; height: 12px; margin: -6px 0 0 -6px; border-radius: 50%; background: var(--v-ink); box-shadow: 0 0 0 3px var(--v-canvas); }
+  .clock__num { position: absolute; font-family: var(--v-font-display); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .clock__num--12 { left: 50%; top: 15%; transform: translateX(-50%); }
+  .clock__num--3 { right: 15%; top: 50%; transform: translateY(-50%); }
+  .clock__num--6 { left: 50%; bottom: 15%; transform: translateX(-50%); }
+  .clock__num--9 { left: 15%; top: 50%; transform: translateY(-50%); }
+  .kc__legend { position: absolute; left: -4rem; right: -4rem; bottom: -1.9rem; text-align: center; white-space: nowrap; font-size: var(--v-t-xs); color: var(--v-ink-soft); letter-spacing: var(--v-track-wide); text-transform: uppercase; }
+  @media (max-width: 860px) {
+    .kc__scrim { background: linear-gradient(to bottom, rgb(246 238 240 / .96) 0%, rgb(246 238 240 / .86) 46%, rgb(246 238 240 / .3) 78%, transparent 100%); }
+    .kc { grid-template-columns: 1fr; grid-template-rows: auto 1fr; row-gap: var(--v-4); align-items: start; padding: clamp(4.5rem, 11vh, 6rem) var(--v-gutter) clamp(1.5rem, 5vh, 3rem); }
+    .kc__copy { max-width: none; grid-row: 2; }
+    .kc__copy .v-label { display: none; }
+    .kc__copy .v-display--lg { font-size: var(--v-t-xl); margin-bottom: var(--v-4); }
+    .kc__rep { min-height: 9rem; }
+    .kc__rep h3 { font-size: var(--v-t-lg); margin-bottom: var(--v-2); }
+    .kc__rep p { font-size: var(--v-t-sm); }
+    .clock { grid-row: 1; width: min(52vw, 30vh); justify-self: start; align-self: start; margin: 0; }
+    .clock__mark i { top: -.45rem; } /* точка на ободе, чтобы не упиралась в цифру 3 */
+    .clock__mark b { top: -2.1rem; font-size: .95rem; }
+    .kc__legend { display: none; }
+    .clock__num { font-size: .95rem; }
+  }
+  @media (max-width: 600px) and (max-height: 700px) { .clock { width: min(46vw, 26vh); } }
+
+  /* ---- свадьба и офис: фото со шторкой и факты --------------------------------- */
+  .ev { display: grid; grid-template-columns: .9fr 1.1fr; gap: var(--v-9); align-items: center; }
+  .ev__fig { position: relative; border-radius: var(--v-radius); overflow: hidden; aspect-ratio: 3 / 4; box-shadow: var(--v-e2), var(--v-edge); }
+  .ev__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .ev__fig figcaption { position: absolute; left: var(--v-5); right: var(--v-5); bottom: var(--v-5); z-index: 1; font-size: var(--v-t-sm); color: var(--v-ink); max-width: 30ch; }
+  .ev__fig::after { content: ""; position: absolute; inset: auto 0 0 0; height: 45%; background: linear-gradient(to top, rgb(246 238 240 / .85), rgb(246 238 240 / .3) 55%, transparent); pointer-events: none; }
+  .ev__facts li { padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); display: grid; gap: var(--v-1); }
+  .ev__facts li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .ev__facts strong { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-lg); letter-spacing: 0; line-height: 1.15; }
+  .ev__facts span { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 50ch; }
+  .ev .v-stack .v-display { margin-bottom: var(--v-2); }
+  .ev__hint { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 50ch; }
+  .ev__hint b { color: var(--v-ink); font-weight: 500; }
+  @media (max-width: 860px) { .ev { grid-template-columns: 1fr; gap: var(--v-6); } .ev__fig { aspect-ratio: 4 / 3; } .ev__fig img { object-position: 50% 60%; } }
+
+  /* ---- отзывы с Яндекс.Карт: слоты под настоящие ------------------------------- */
+  .reviews__head { display: flex; flex-wrap: wrap; gap: var(--v-6); align-items: end; justify-content: space-between; margin-bottom: var(--v-7); }
+  .reviews__rating { display: flex; align-items: center; gap: var(--v-3); font-size: var(--v-t-sm); flex-wrap: wrap; }
+  .reviews__rating a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--v-2); }
+  .reviews__num { font-family: var(--v-font-display); font-size: var(--v-t-2xl); line-height: 1; color: var(--v-accent); }
+  .reviews__stars { --size: 1.1rem; display: inline-block; width: calc(var(--size) * 5); height: var(--size);
+    background: linear-gradient(90deg, var(--v-accent) calc(var(--r, 0) / 5 * 100%), var(--v-hair-strong) 0);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x; }
+  .reviews__stars--sm { --size: .8rem; vertical-align: middle; }
+  .reviews__list { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--v-6); align-items: start; }
+  .reviews__item { padding-top: var(--v-5); border-top: 1px solid var(--v-hair); }
+  .reviews__item--big .reviews__text, .reviews__text { font-family: var(--v-font-text); font-size: 1.1rem; line-height: 1.55; font-weight: 400; }
+  .reviews__list { grid-template-columns: repeat(3, 1fr); }
+  .reviews__meta { margin-top: var(--v-3); }
+  .price__head .v-body { margin-bottom: var(--v-6); }
+  .price__fig { border-radius: 24px; overflow: hidden; aspect-ratio: 4 / 5; max-width: 26rem; box-shadow: var(--v-e2); }
+  .price__fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .price__head { position: sticky; top: 6rem; align-self: start; }
+  @media (max-width: 1000px) { .price__head { position: static; } .price__fig { aspect-ratio: 4 / 3; max-width: none; } .price__fig img { object-position: 50% 20%; } }
+  .reviews__text { text-wrap: pretty; }
+  .reviews__meta { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .reviews__meta b { color: var(--v-ink); font-weight: 500; }
+  .reviews__fact { margin-top: var(--v-7); padding-top: var(--v-5); border-top: 1px solid var(--v-hair); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 860px) { .reviews__list { grid-template-columns: 1fr; } }
+
+  /* ---- финал: одно сообщение ----------------------------------------------------- */
+  .close { min-height: 86svh; display: grid; grid-template-rows: 1fr auto; padding: clamp(6rem, 14vh, 9rem) var(--v-gutter) 2.5rem;
+    background: radial-gradient(60rem 40rem at calc(var(--v-mx, .5) * 100%) calc(var(--v-my, .5) * 100%), rgb(132 83 95 / .10), transparent 60%); }
+  .close__inner { align-self: center; display: grid; grid-template-columns: 1.25fr .75fr; gap: var(--v-9); align-items: start; padding-bottom: var(--v-9); }
+  .close__inner .v-display { margin-bottom: var(--v-5); }
+  .close__inner .v-lede { max-width: 40ch; }
+  .close__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  .close__tel { font-family: var(--v-font-display); font-size: var(--v-t-xl); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; color: var(--v-ink); letter-spacing: .01em; }
+  .close__hint { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 44ch; }
+  .close__meta { display: grid; gap: var(--v-3); color: var(--v-ink-soft); padding-top: var(--v-2); }
+  .close__meta b { color: var(--v-ink); font-weight: 500; display: block; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; margin-bottom: .2em; }
+  .foot { display: flex; justify-content: space-between; gap: var(--v-4); padding: var(--v-6) 0 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-xs); color: var(--v-ink-soft); flex-wrap: wrap; }
+  @media (max-width: 860px) {
+    .close { min-height: 0; padding: clamp(5rem, 12vh, 7rem) var(--v-gutter) calc(2.5rem + env(safe-area-inset-bottom)); }
+    .close__inner { grid-template-columns: 1fr; gap: var(--v-7); padding-bottom: var(--v-8); }
+    .close__tel { font-size: var(--v-t-lg); }
+    .foot__more { display: none; }
+  }
+  /* телефон: текст не мельче 15 px (--v-t-sm на 390 px = 14 px); блок в конце, чтобы не перебивался правилами компонентов */
+  @media (max-width: 860px) {
+    .hero__tel, .poka__rows p, .sb__rep p, .sb__hint, .price__rows p, .price__terms li, .kc__rep p, .ev__facts span, .ev__hint, .ev__fig figcaption,
+    .reviews__meta, .reviews__rating, .reviews__fact, .close__hint, .close__meta, .foot, .hero__card figcaption { font-size: .95rem; }
+    .bar .v-btn { font-size: .95rem; }
+    .v-label, .sb__step, .close__meta b, .price__rows .sum small { font-size: .95rem; }
+  }
+
+  /* ---- закреплённое стеклянное меню с подсветкой текущего раздела; на телефоне бургер ---- */
+  .bar__nav { display: flex; gap: 2px; padding: 4px; border-radius: 999px; background: rgb(255 250 251 / .62); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+    box-shadow: 0 8px 24px rgb(84 40 62 / .12), var(--v-edge); }
+  .bar__nav a { padding: 0 14px; min-height: 40px; display: inline-flex; align-items: center; border-radius: 999px; text-decoration: none; font-size: var(--v-t-sm); font-weight: 500; color: var(--v-ink); white-space: nowrap;
+    transition: background .25s var(--v-ease-out), color .25s var(--v-ease-out); }
+  .bar__nav a:hover { background: rgb(132 83 95 / .12); }
+  .bar__nav a.is-active { background: var(--v-accent); color: var(--v-accent-ink); }
+  .bar__burger { display: none; width: 44px; height: 44px; border-radius: 12px; border: 1px solid rgb(132 83 95 / .35); background: rgb(255 250 251 / .6); cursor: pointer; position: relative; flex-shrink: 0; }
+  .bar__burger span, .bar__burger span::before, .bar__burger span::after { content: ""; position: absolute; left: 12px; width: 20px; height: 2px; background: var(--v-ink); border-radius: 2px; transition: transform .3s var(--v-ease-out), background .2s; }
+  .bar__burger span { top: 21px; } .bar__burger span::before { left: 0; top: -6px; } .bar__burger span::after { left: 0; top: 6px; }
+  .bar.is-open .bar__burger span { background: transparent; }
+  .bar.is-open .bar__burger span::before { transform: translateY(6px) rotate(45deg); }
+  .bar.is-open .bar__burger span::after { transform: translateY(-6px) rotate(-45deg); }
+  @media (max-width: 1240px) { .bar__tel { display: none; } }
+  @media (max-width: 1080px) {
+    .bar__burger { display: block; }
+    .bar__nav { display: none; position: absolute; left: var(--v-gutter); right: var(--v-gutter); top: calc(100% + 6px); flex-direction: column; border-radius: 20px; padding: 8px; background: rgb(255 250 251 / .94); }
+    .bar.is-open .bar__nav { display: flex; }
+    .bar__nav a { min-height: 48px; font-size: 1.05rem; padding: 0 16px; }
+  }
+
+  /* ---- логотип: рукописная подпись, как на пине ----------------------------------- */
+  .bar__mark { font-family: var(--x-script); font-size: 1.7rem; letter-spacing: 0; }
+
+  /* ---- конструктор букета с чеком (идея «чека визита» из барбершопа) ----------------- */
+  .k { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: clamp(20px, 3.5vw, 48px); align-items: start; }
+  .k__head { max-width: 46rem; margin-bottom: var(--v-7); }
+  .k__head .v-body { margin-top: var(--v-4); color: var(--v-ink-soft); }
+  .k__ctrl { display: grid; gap: var(--v-6); }
+  .k__grp h3 { font-family: var(--v-font-text); font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); font-weight: 500; margin-bottom: var(--v-3); }
+  .k__row { display: flex; flex-wrap: wrap; gap: 10px; }
+  .k__row button { display: inline-flex; align-items: center; gap: 10px; padding: 12px 18px; min-height: 46px; border-radius: 999px; border: 1px solid rgb(132 83 95 / .4); background: var(--v-surface); color: var(--v-ink);
+    font: 500 .95rem/1 var(--v-font-text); cursor: pointer; transition: transform .2s var(--v-ease-out), background .25s, color .25s, border-color .25s; }
+  .k__row button small { font-weight: 500; font-size: .78rem; opacity: .7; }
+  .k__row button:hover { transform: translateY(-2px); border-color: var(--v-accent); }
+  .k__row button:active { transform: scale(.95); }
+  .k__row button[aria-pressed="true"] { background: var(--v-accent); color: var(--v-accent-ink); border-color: var(--v-accent); }
+  .k__row .tick { width: 16px; height: 16px; border-radius: 50%; border: 1.5px solid currentColor; display: grid; place-items: center; font-size: 10px; line-height: 1; flex: none; }
+  .k__row button[aria-pressed="true"] .tick::before { content: "✓"; }
+  .k__sizes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .k__sizes button { flex-direction: column; align-items: flex-start; gap: 6px; border-radius: 16px; padding: 16px; }
+  .k__sizes button b { font-family: var(--v-font-display); font-size: 1.5rem; font-weight: 600; line-height: 1; }
+  .k__sizes button span { font-size: .85rem; opacity: .85; }
+  .k__sel { width: 100%; max-width: 15rem; min-height: 46px; padding: 0 14px; border-radius: 12px; border: 1px solid rgb(132 83 95 / .4); background: var(--v-surface); color: var(--v-ink); font: 500 .95rem var(--v-font-text); }
+  .k__when { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .k__msg { width: 100%; min-height: 46px; padding: 12px 14px; border-radius: 12px; border: 1px solid rgb(132 83 95 / .4); background: var(--v-surface); color: var(--v-ink); font: 400 .95rem var(--v-font-text); }
+
+  .k__side { position: sticky; top: 5.5rem; }
+  .rc { position: relative; padding: 0 0 18px; border-radius: 14px; background: #fffafb; color: var(--v-ink); box-shadow: 0 30px 50px -24px rgb(84 40 62 / .45), var(--v-edge); display: grid; gap: 12px; align-content: start; overflow: visible; }
+  .rc::after { content: ""; position: absolute; left: 0; right: 0; bottom: -8px; height: 9px; background: radial-gradient(circle at 6px -1px, transparent 6px, #fffafb 6.5px) 0 0 / 12px 9px repeat-x; }
+  .rc__pic { position: relative; aspect-ratio: 16 / 10; overflow: hidden; border-radius: 14px 14px 0 0; background: var(--x-rose); }
+  .rc__pic img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .5s var(--v-ease-out); }
+  .rc__pic img.is-on { opacity: 1; }
+  .rc__pic span { position: absolute; left: 12px; bottom: 10px; padding: 4px 10px; border-radius: 999px; background: rgb(255 250 251 / .85); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; }
+  .rc__in { padding: 0 20px; display: grid; gap: 10px; }
+  .rc__head { text-align: center; font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; border-bottom: 1px dashed rgb(108 82 93 / .5); padding: 4px 0 10px; color: var(--v-ink-soft); }
+  .rc__lines { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; min-height: 5em; font-size: .9rem; }
+  .rc__lines li { display: flex; justify-content: space-between; gap: 12px; animation: k-line .35s var(--v-ease-out); }
+  .rc__lines li span:last-child { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .rc__lines li.is-combo { color: #a03d5a; }
+  .rc__row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; border-top: 1px dashed rgb(108 82 93 / .5); padding-top: 10px; font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--v-ink-soft); }
+  .rc__row b { color: var(--v-ink); letter-spacing: 0; text-transform: none; font-variant-numeric: tabular-nums; }
+  .rc__row--sum b { font: 600 2.2rem/1 var(--v-font-display); }
+  .rc__row--t b { font-size: 1rem; font-weight: 600; }
+  .rc__cta { display: grid; gap: 10px; margin-top: 4px; }
+  .rc__cta .v-btn { justify-content: center; width: 100%; }
+  .rc__copy { background: none; border: 0; padding: 8px; color: var(--v-ink-soft); font: 500 .85rem var(--v-font-text); text-decoration: underline; text-underline-offset: .2em; cursor: pointer; min-height: 40px; }
+  .rc__note { font-size: .78rem; line-height: 1.4; color: var(--v-ink-soft); text-align: center; }
+  @keyframes k-line { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+  @media (max-width: 960px) { .k { grid-template-columns: 1fr; } .k__side { position: static; } .k__sizes { grid-template-columns: 1fr; } .k__sizes button { flex-direction: row; justify-content: space-between; align-items: center; } }
+
+  /* ---- блок о мастерской: тёмный мальвовый, как «О нас» на пине --------------------- */
+  .about { background: var(--x-mauve); color: #fff7f9; padding: var(--v-section) 0; }
+  .about .v-wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(24px, 5vw, 80px); align-items: center; }
+  .about .v-label { display: block; margin-bottom: var(--v-3); font-family: var(--x-script); font-size: 1.9rem; letter-spacing: 0; text-transform: none; font-weight: 400; color: #f1d4dc; }
+  .about h2 { margin-bottom: var(--v-5); color: #fff7f9; }
+  .about p { color: rgb(255 247 249 / .9); max-width: 52ch; text-wrap: pretty; }
+  .about p + p { margin-top: var(--v-4); }
+  .about__list { margin-top: var(--v-6); display: grid; gap: var(--v-3); }
+  .about__list li { display: grid; grid-template-columns: 2.2rem 1fr; gap: .6rem; color: rgb(255 247 249 / .92); }
+  .about__list li i { width: .6rem; height: .6rem; border-radius: 50%; background: #f1d4dc; margin-top: .55em; justify-self: center; }
+  .about__list b { font-weight: 600; color: #fff; }
+  .about__fig { border-radius: 24px; overflow: hidden; aspect-ratio: 4 / 5; box-shadow: 0 30px 60px rgb(40 18 30 / .4); }
+  .about__fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  @media (max-width: 860px) { .about .v-wrap { grid-template-columns: 1fr; } .about__fig { aspect-ratio: 4 / 3; order: -1; } .about__fig img { object-position: 50% 30%; } }
+  @media (max-width: 860px) { .about p, .about__list li, .k__grp h3, .rc__row, .rc__note, .rc__lines { font-size: .95rem; } }
+
+
+  /* ---- оттенки блоков: лёгкая смена розового от секции к секции ---- */
+  #ceny { background: #faf3f5; }
+  #raschet { background: #efdfe4; }
+  #zakaz { background: #efdfe4; }
+  #sborka { background: #faf3f5; }
+  #otzyvy { background: #faf3f5; }
+  #sobytiya { background: #f1e3e8; }
+  #poka { background: #f3e6ea; }
+</style>
+</head>
+<body>
+<div class="v-page">
+  <span data-v-progress></span>
+  <div class="v-grain" aria-hidden="true"></div>
+
+  <header class="bar">
+    <a class="bar__mark" href="#top"><i aria-hidden="true"></i>Амелия</a>
+    <nav class="bar__nav" id="menu" aria-label="Разделы сайта"><a href="#sborka">Как собираем</a><a href="#raschet">Конструктор</a><a href="#ceny">Цены</a><a href="#kchasu">Доставка</a><a href="#sobytiya">События</a><a href="#o-nas">О нас</a><a href="#otzyvy">Отзывы</a></nav>
+    <div class="bar__right">
+      <a class="bar__tel" href="tel:+74852000000">+7 (4852) 000-00-00</a>
+      <a class="v-btn" href="#zakaz" rel="noopener">Заказать букет</a>
+      <button class="bar__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu"><span></span></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1 · УЗНАВАНИЕ: букет в светлой студии, два плана -->
+    <section id="top" data-v-act="pin" data-v-span="2" data-v-drift="#f6eef0" aria-label="Букеты с доставкой к часу">
+      <div data-v-stage>
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="v-layer hero__back" data-v-parallax="-0.3">
+          <picture>
+            <img src="assets/hero.webp" alt="Нежно-розовые розы на белом кружеве" width="1200" height="1800" fetchpriority="high">
+          </picture>
+        </div>
+        <div class="hero__scrim" aria-hidden="true"></div>
+        <div class="v-layer hero__card" data-v-parallax="-0.15">
+          <div class="chip">
+            <img src="assets/wrap.webp" alt="" width="56" height="72" decoding="async">
+            <div><b>Фото перед отправкой</b><span>в ваш чат за час до доставки</span></div>
+          </div>
+        </div>
+        <div class="hero__floor" aria-hidden="true"></div>
+
+        <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.86 0 0.12">
+          <span class="v-label hero__label">цветочная мастерская Амелия</span>
+          <h1 class="v-display v-display--xl" data-v-kinetic="lines">Букеты с доставкой по Ярославлю к вашему часу</h1>
+          <p class="v-lede">Фото собранного букета перед отправкой: едет то, что на фото. Состав и цена финальные при подтверждении заказа, курьер в оговорённый интервал.</p>
+          <div class="hero__cta">
+            <a class="v-btn" href="#zakaz" rel="noopener">Заказать букет</a>
+            <a class="hero__tel" href="tel:+74852000000">или позвоните <b>+7 (4852) 000-00-00</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · ЦЕНА БЕЗДЕЙСТВИЯ и ПОВОРОТ: повод бывает один раз -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#f3e6ea" id="poka" aria-label="Что портит повод">
+      <div class="v-wrap">
+        <div class="poka__head" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--lg">Повод бывает один раз</h2>
+          <p class="v-body v-soft">Букет заказывают не «вообще», а к моменту: к вечеру, к выписке, к семи утра на работу. Три вещи, из-за которых момент оказывается испорчен.</p>
+        </div>
+        <ul class="poka__rows" data-v-in data-v-stagger="90">
+          <li><h3>Привезли не то, что на фото</h3><p>На сайте пионы и садовые розы, в дверях «то, что было». Замену никто не согласовал, а получатель уже держит букет в руках – возвращать неловко.</p></li>
+          <li><h3>Опоздали к событию</h3><p>Гости за столом, курьер «уже в пути». Букет, который приехал после тоста, не подарок, а неловкая пауза.</p></li>
+          <li><h3>Цена выросла «из-за сезона»</h3><p>В корзине одна сумма, в звонке от флориста другая: «розы подорожали». В день праздника спорить никто не будет – на это и расчёт.</p></li>
+        </ul>
+        <div class="turn" data-v-in data-v-in-self>
+          <span class="v-label">Поэтому</span>
+          <p class="turn__text">Состав и цену фиксируем при подтверждении заказа, час доставки пишем в заказ, а за час до выезда присылаем фото собранного букета.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · ПОВОРОТ и ВЫБОР: букет собирается (фирменный ход 1, веер карточек) -->
+    <section data-v-act="pin" data-v-span="2.4" data-v-drift="#faf3f5" id="sborka" aria-label="Как собираем букет">
+      <div data-v-stage>
+        <div class="sb">
+          <div class="sb__head" data-v-cue="0 1 0 0" data-v-rise="0">
+            <span class="v-label">Как собираем</span>
+            <h2 class="v-display v-display--md">Букет собирается под повод, а не наоборот</h2>
+          </div>
+
+          <div class="sb__rep">
+            <div data-v-cue="0 0.26 0 0.05">
+              <span class="sb__step"><i aria-hidden="true"></i>1 · Повод</span>
+              <h3>Скажите, для кого и к какому часу</h3>
+              <p>День рождения, выписка, «просто так» или извинение: от повода зависят цветы, размер и упаковка. <b>Час доставки пишем в заказ сразу.</b></p>
+            </div>
+            <div data-v-cue="0.27 0.51 0.05 0.05">
+              <span class="sb__step"><i aria-hidden="true"></i>2 · Цветы</span>
+              <h3>Состав букета известен до оплаты</h3>
+              <p>Какие цветы и сколько стеблей, называем до подтверждения. <b>Если чего-то нет в поставке, предлагаем замену по фото</b>, а не ставим молча.</p>
+            </div>
+            <div data-v-cue="0.52 0.76 0.05 0.05">
+              <span class="sb__step"><i aria-hidden="true"></i>3 · Упаковка и открытка</span>
+              <h3>Крафт, плёнка или лента</h3>
+              <p>Упаковку выбираете вы. <b>Открытка с вашим текстом</b> уходит в букет слово в слово, без наших правок.</p>
+            </div>
+            <div data-v-cue="0.77 1 0.05 0">
+              <span class="sb__step"><i aria-hidden="true"></i>4 · Фото перед отправкой</span>
+              <h3>Собранный букет уходит вам в чат</h3>
+              <p>За час до доставки присылаем фото именно вашего букета. <b>Едет то, что на фото</b>, а не «примерно такой».</p>
+            </div>
+          </div>
+
+          <div class="fan" aria-hidden="true">
+            <figure class="fan__card fan__card--5"><img src="assets/carnation.webp" alt="" width="829" height="1105" loading="lazy" decoding="async"><figcaption>Гвоздики · классика</figcaption></figure>
+            <figure class="fan__card fan__card--4"><img src="assets/eustoma.webp" alt="" width="828" height="1104" loading="lazy" decoding="async"><figcaption>Эустома · нежность</figcaption></figure>
+            <figure class="fan__card fan__card--3"><img src="assets/tulip.webp" alt="" width="690" height="920" loading="lazy" decoding="async"><figcaption>Тюльпаны · весна</figcaption></figure>
+            <figure class="fan__card fan__card--2"><img src="assets/ranunculus.webp" alt="" width="675" height="900" loading="lazy" decoding="async"><figcaption>Розы · акцент</figcaption></figure>
+            <figure class="fan__card fan__card--1"><img src="assets/peony.webp" alt="" width="848" height="1131" loading="lazy" decoding="async"><figcaption>Пионы · основа</figcaption></figure>
+            <figure class="fan__card fan__card--wrap"><img src="assets/wrap.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Собрано · бумага, лента</figcaption></figure>
+            <p class="fan__legend">Состав на фото – пример: ваш букет соберём под ваш повод</p>
+          </div>
+
+          <div class="sb__after" data-v-cue="0.78 1 0.06 0">
+            <a class="v-btn" href="#zakaz" rel="noopener">Заказать букет</a>
+            <span class="sb__hint">Не знаете, какие цветы – опишите человека и повод, предложим варианты с фото</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3б · КОНСТРУКТОР: соберите букет и увидите цену (чек заказа) -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#efdfe4" id="raschet" aria-label="Конструктор букета и цена">
+      <div class="v-wrap">
+        <div class="k__head" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--lg">Соберите букет и сразу увидите цену</h2>
+          <p class="v-body">Выберите повод, размер и цветы. Чек справа считается сам, а готовый заказ уходит нам в WhatsApp одним нажатием: ответим составом и подтвердим час.</p>
+        </div>
+        <div class="k" data-k data-v-in data-v-stagger="80">
+          <div class="k__ctrl">
+            <div class="k__grp"><h3>Повод</h3><div class="k__row" data-k-occ></div></div>
+            <div class="k__grp"><h3>Размер</h3><div class="k__row k__sizes" data-k-size></div></div>
+            <div class="k__grp"><h3>Основные цветы</h3><div class="k__row" data-k-flw></div></div>
+            <div class="k__grp"><h3>Упаковка</h3><div class="k__row" data-k-pack></div></div>
+            <div class="k__grp"><h3>Что добавить</h3><div class="k__row" data-k-add></div></div>
+            <div class="k__grp"><h3>Когда и как</h3>
+              <div class="k__when">
+                <div class="k__row" data-k-day></div>
+                <select class="k__sel" data-k-hour aria-label="Час доставки"></select>
+              </div>
+              <div class="k__row" style="margin-top:10px" data-k-way></div>
+            </div>
+            <div class="k__grp"><h3>Текст открытки (по желанию)</h3><input class="k__msg" type="text" maxlength="120" placeholder="Например: «Маме с любовью»" data-k-card></div>
+          </div>
+          <aside class="k__side" aria-label="Чек заказа">
+            <div class="rc">
+              <div class="rc__pic" aria-hidden="true">
+                <img data-k-img="peony" src="assets/peony.webp" alt="" loading="lazy">
+                <img data-k-img="ranunculus" src="assets/ranunculus.webp" alt="" loading="lazy">
+                <img data-k-img="tulip" src="assets/tulip.webp" alt="" loading="lazy">
+                <img data-k-img="eustoma" src="assets/eustoma.webp" alt="" loading="lazy">
+                <img data-k-img="carnation" src="assets/carnation.webp" alt="" loading="lazy">
+                <img data-k-img="mix" src="assets/wrap.webp" alt="" loading="lazy">
+                <span data-k-cap>Пионы</span>
+              </div>
+              <div class="rc__in">
+                <div class="rc__head">Чек заказа · Амелия</div>
+                <ul class="rc__lines" data-k-lines></ul>
+                <div class="rc__row rc__row--sum">Итого <b data-k-total>0 ₽</b></div>
+                <div class="rc__row rc__row--t">Фото букета в чат <b data-k-photo>–</b></div>
+                <div class="rc__cta">
+                  <a class="v-btn" href="#zakaz" target="_blank" rel="noopener" data-k-send>Отправить заказ в WhatsApp</a>
+                  <button type="button" class="rc__copy" data-k-copy>Скопировать текст заказа</button>
+                </div>
+                <p class="rc__note">Цена в чеке финальная: после подтверждения состав и сумма не меняются. Демо-расчёт, цены условные.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · ВЫБОР: сколько стоит, три формата -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#faf3f5" id="ceny" aria-label="Сколько стоит">
+      <div class="v-wrap price">
+        <div class="price__head" data-v-in data-v-in-self>
+          <h2 class="v-display v-display--lg">Сколько стоит</h2>
+          <p class="v-body">Три формата, чтобы было от чего оттолкнуться. Точный состав и цену называем при заказе, и после подтверждения они не меняются.</p>
+          <figure class="price__fig"><img src="assets/price.webp" alt="Букет из розовых и белых роз в розовой упаковке с атласным бантом" width="900" height="1125" loading="lazy" decoding="async"></figure>
+        </div>
+        <div data-v-in data-v-stagger="80">
+          <ul class="price__rows">
+            <li>
+              <h3>Букет в руку</h3>
+              <p>Один-два вида цветов и зелень, в крафте или на ленте. Когда нужен знак внимания, а не ваза на полстола.</p>
+              <span class="sum v-nums">от 2 900 ₽<small>состав – при заказе</small></span>
+            </li>
+            <li>
+              <h3>Букет на стол</h3>
+              <p>Три-четыре вида цветов, объёмная сборка, упаковка на выбор. Основной формат к дате и к выписке.</p>
+              <span class="sum v-nums">от 4 500 ₽<small>состав – при заказе</small></span>
+            </li>
+            <li>
+              <h3>Большой букет</h3>
+              <p>Сборка на событие: юбилей, встреча, «чтобы запомнили». Состав согласуем по фото до того, как начнём собирать.</p>
+              <span class="sum v-nums">от 7 900 ₽<small>состав – при заказе</small></span>
+            </li>
+          </ul>
+          <ul class="price__terms">
+            <li><b>Доставка по городу</b><span>350 ₽, интервал 2 часа. Ездим: весь город и до 15 км за ним. Самовывоз из мастерской – без доплаты.</span></li>
+            <li><b>Цена финальная</b><span>После подтверждения заказа сумма не меняется: ни «из-за сезона», ни «из-за пробок». Замена цветов – только с вашего согласия по фото.</span></li>
+            <li><b>Свежесть оговорена</b><span>При заказе скажем, когда привезли цветы, из которых соберём ваш букет, и сколько он простоит при уходе по памятке.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · ДОКАЗАТЕЛЬСТВО: к часу (фирменный ход 2, часы доставки) -->
+    <section data-v-act="pin" data-v-span="2" data-v-drift="#fbf5f6" id="kchasu" aria-label="Как доставляем к часу">
+      <div data-v-stage>
+        <div class="v-layer kc__img" data-v-parallax="-0.4">
+          <img src="assets/delivery.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <div class="kc__scrim" aria-hidden="true"></div>
+        <div class="kc">
+          <div class="kc__copy">
+            <div data-v-cue="0 1 0 0" data-v-rise="0">
+              <span class="v-label">Доставка</span>
+              <h2 class="v-display v-display--lg">Час в заказе, а не «в течение дня»</h2>
+            </div>
+            <div class="kc__rep">
+              <div data-v-cue="0 0.34 0 0.06">
+                <h3>Вы называете час</h3>
+                <p>Записываем его в заказ вместе с адресом и телефоном получателя. Интервал доставки – 2 часа, о нём вы знаете до оплаты.</p>
+              </div>
+              <div data-v-cue="0.36 0.66 0.06 0.06">
+                <h3>За час до выезда: фото букета</h3>
+                <p>Собранный букет фотографируем и присылаем вам. Что-то не так – переделываем до выезда курьера, а не извиняемся после.</p>
+              </div>
+              <div data-v-cue="0.68 1 0.06 0">
+                <h3>Курьер в оговорённый интервал</h3>
+                <p>Букет едет в воде и в коробке, не россыпью в багажнике. Получателя предупреждаем звонком, если вы не просили сюрприз.</p>
+              </div>
+            </div>
+          </div>
+          <div class="clock" aria-hidden="true">
+            <i class="clock__tick clock__tick--big" style="--deg:0deg"></i><i class="clock__tick" style="--deg:30deg"></i><i class="clock__tick" style="--deg:60deg"></i>
+            <i class="clock__tick clock__tick--big" style="--deg:90deg"></i><i class="clock__tick" style="--deg:120deg"></i><i class="clock__tick" style="--deg:150deg"></i>
+            <i class="clock__tick clock__tick--big" style="--deg:180deg"></i><i class="clock__tick" style="--deg:210deg"></i><i class="clock__tick" style="--deg:240deg"></i>
+            <i class="clock__tick clock__tick--big" style="--deg:270deg"></i><i class="clock__tick" style="--deg:300deg"></i><i class="clock__tick" style="--deg:330deg"></i>
+            <span class="clock__num clock__num--12">12</span><span class="clock__num clock__num--3">3</span><span class="clock__num clock__num--6">6</span><span class="clock__num clock__num--9">9</span>
+            <span class="clock__mark clock__mark--photo"><i></i><b>фото вам</b></span>
+            <span class="clock__mark clock__mark--door"><i></i><b>ваш час</b></span>
+            <i class="clock__hand clock__hand--h"></i>
+            <i class="clock__hand clock__hand--m"></i>
+            <i class="clock__pin"></i>
+            <p class="kc__legend">Стрелка идёт к вашему часу, пока вы листаете</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · СОБЫТИЯ: свадьба и офис -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#f1e3e8" id="sobytiya" aria-label="Свадьба и офис">
+      <div class="v-wrap ev">
+        <figure class="ev__fig" data-v-reveal="up" data-v-reveal-at="0.12 0.46" data-v-tilt="4">
+          <img src="assets/wedding.webp" alt="Свадебный букет из роз и пионов в руках невесты, стебли в кружевной ленте" width="1200" height="1600" loading="lazy" decoding="async">
+          <figcaption>Свадебный букет собираем накануне, утром отдаём в воде, к часу выезда</figcaption>
+        </figure>
+        <div class="v-stack" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--md">Свадьба и офис: то же обещание, другой масштаб</h2>
+          <ul class="ev__facts">
+            <li><strong>Свадебный букет и бутоньерка</strong><span>Встреча или созвон с референсами, состав и цена до предоплаты, фото готового букета накануне. Утром букет ждёт в воде к часу выезда.</span></li>
+            <li><strong>Оформление стола и зала</strong><span>Считаем по плану рассадки: сколько композиций, какой высоты, что с ними после праздника. Смета до предоплаты, дальше не растёт.</span></li>
+            <li><strong>Цветы в офис по подписке</strong><span>Композиция на ресепшн или в переговорную в оговорённый день и час каждую неделю. Вазы наши, замена вялых цветов между визитами – наша.</span></li>
+          </ul>
+          <p class="ev__hint"><b>События считаем заранее:</b> напишите дату, место и примерное число гостей – ответим составом, ценой и сроками.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6б · О МАСТЕРСКОЙ: мальвовый блок, как «О нас» на референсе -->
+    <section class="about" data-v-act="flow" data-v-drift="#f6eef0" id="o-nas" aria-label="О мастерской">
+      <div class="v-wrap">
+        <div data-v-in data-v-stagger="80">
+          <span class="v-label">о мастерской</span>
+          <h2 class="v-display v-display--md">Собираем руками, а не по шаблону</h2>
+          <p>Амелия – небольшая мастерская в центре Ярославля. Мы не раскладываем цветы по готовым схемам: берём ваш повод, человека и бюджет и собираем букет под них.</p>
+          <p>Свежие цветы приезжают в мастерскую по расписанию поставок, и при заказе мы говорим, когда привезли именно те, из которых соберём ваш букет.</p>
+          <ul class="about__list">
+            <li><i aria-hidden="true"></i><span><b>Живая сборка.</b> Флорист подбирает цветы под повод и показывает результат на фото.</span></li>
+            <li><i aria-hidden="true"></i><span><b>Честная замена.</b> Если нужного цветка нет, предлагаем аналог по фото и ждём вашего «да».</span></li>
+            <li><i aria-hidden="true"></i><span><b>Уход в подарок.</b> К каждому букету – памятка, как продлить ему жизнь.</span></li>
+          </ul>
+        </div>
+        <figure class="about__fig" data-v-reveal="up" data-v-reveal-at="0.1 0.4">
+          <img src="assets/about.webp" alt="Флорист собирает букет из ранункулюсов и садовых роз в мастерской" width="1000" height="1500" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 7 · ДОВЕРИЕ: отзывы с Яндекс.Карт (только настоящие, слоты; нет отзывов – удалить секцию целиком) -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#faf3f5" id="otzyvy" data-slot-optional aria-label="Отзывы с Яндекс.Карт">
+      <div class="v-wrap reviews">
+        <div class="reviews__head" data-v-in data-v-stagger="60">
+          <h2 class="v-display v-display--md">Что пишут на Яндекс.Картах</h2>
+          <div class="reviews__rating">
+            <span class="reviews__num v-nums">4.9</span>
+            <span class="reviews__stars" style="--r: 4.9" role="img" aria-label="рейтинг 4.9 из 5"></span>
+            <span class="v-soft">128 отзывов</span>
+            <a href="#otzyvy" target="_blank" rel="noopener">Читать все отзывы</a>
+          </div>
+        </div>
+        <ul class="reviews__list" data-v-in data-v-stagger="90">
+          <li class="reviews__item reviews__item--big">
+            <p class="reviews__text">«Заказывал маме к юбилею на 11 утра, в 10:20 прислали фото собранного букета, курьер был в 10:50. Всё как на фото.»</p>
+            <p class="reviews__meta"><b>Дмитрий Р.</b> · март 2026 · <span class="reviews__stars reviews__stars--sm" style="--r: 5" role="img" aria-label="оценка 5 из 5"></span></p>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__text">«Свадебный букет и бутоньерка. Обсудили состав за неделю, цена не поменялась, утром привезли в коробке со льдом.»</p>
+            <p class="reviews__meta"><b>Анна С.</b> · июнь 2026 · <span class="reviews__stars reviews__stars--sm" style="--r: 5" role="img" aria-label="оценка 5 из 5"></span></p>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__text">«Пионы стояли восемь дней. Единственное – хотела доставку к 9:00, а ближайший интервал был с 10 до 12.»</p>
+            <p class="reviews__meta"><b>Марина Л.</b> · май 2026 · <span class="reviews__stars reviews__stars--sm" style="--r: 4" role="img" aria-label="оценка 4 из 5"></span></p>
+          </li>
+        </ul>
+        <p class="reviews__fact" data-v-in data-v-in-self>Отзывы в этом демо условные. На боевом сайте сюда идут настоящие отзывы с карточки на Картах, без правок.</p>
+      </div>
+    </section>
+
+    <!-- 8 · ДЕЙСТВИЕ: назовите повод и час -->
+    <section data-v-act="flow" data-v-drift="#efdfe4" id="zakaz" aria-label="Заказать букет">
+      <div class="close" data-v-spotlight>
+        <div class="close__inner">
+          <div data-v-in data-v-stagger="80">
+            <h2 class="v-display v-display--lg">Назовите повод и час</h2>
+            <p class="v-lede">Ответим составом, ценой и временем доставки. Фото собранного букета придёт в тот же чат за час до выезда.</p>
+            <div class="close__cta">
+              <a class="v-btn" href="#zakaz" rel="noopener" data-v-magnet="0.22" data-v-rise="0">Заказать букет</a>
+              <a class="close__tel" href="tel:+74852000000">+7 (4852) 000-00-00</a>
+            </div>
+            <p class="close__hint">Не знаете, какие цветы – опишите человека и повод, предложим два-три варианта с фото и ценой. Не любите писать – звоните.</p>
+          </div>
+          <div class="close__meta" data-v-in data-v-stagger="60">
+            <span><b>Принимаем заказы</b>ежедневно 8:00–22:00</span>
+            <span><b>Доставка</b>интервал 2 часа · весь город и до 15 км за ним</span>
+            <span data-slot-optional><b>Мастерская и самовывоз</b>ул. Кооперативная, 8, Ярославль</span>
+          </div>
+        </div>
+        <footer class="foot">
+          <span>Амелия · Ярославль</span>
+          <span data-slot-optional>ИП Громова Е. С. · ИНН 760000000000</span>
+          <span class="foot__more">Букеты с доставкой к часу, свадебная флористика, цветы в офис</span>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="vibe.js"></script>
+<script src="x.js"></script>
+<script>
+  // На телефоне пины короче: data-v-span из CSS не поменять, правим атрибут до монтирования.
+  if (window.matchMedia('(max-width: 860px)').matches) {
+    document.getElementById('top').setAttribute('data-v-span', '1.6');
+    document.getElementById('sborka').setAttribute('data-v-span', '2.2');
+    document.getElementById('kchasu').setAttribute('data-v-span', '1.8');
+  }
+  Vibe.mount(document.querySelector('.v-page'));
+
+  // Шапка: подложка после 40 px прокрутки, чтобы текст секций не просвечивал.
+  (function () {
+    var bar = document.querySelector('.bar'), on = null;
+    function tick() { var s = window.scrollY > 40; if (s !== on) { on = s; bar.classList.toggle('is-scrolled', s); } }
+    window.addEventListener('scroll', tick, { passive: true }); tick();
+  })();
+  // Фирменные ходы (веер карточек в #sborka и часы в #kchasu) ведёт CSS от --v-p акта, скрипта им не нужно.
+</script>
+</body>
+</html>
