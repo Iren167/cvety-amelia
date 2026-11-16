@@ -421,6 +421,27 @@
   #otzyvy { background: #faf3f5; }
   #sobytiya { background: #f1e3e8; }
   #poka { background: #f3e6ea; }
+
+  /* ---- телефон: без закреплённых сцен и анимации букета -------------------------
+     Страница листается как обычная: сцены не залипают, реплики идут столбиком,
+     веер букета и часы показаны в готовом виде. */
+  @media (max-width: 860px) {
+    .v-page [data-v-act="pin"] { height: auto !important; }
+    .v-page [data-v-act="pin"] [data-v-stage] { position: relative; height: auto; overflow: hidden; }
+    .v-page #top [data-v-stage] { height: 100svh; overflow: hidden; }
+    .v-page #sborka, .v-page #kchasu { --v-p: 1 !important; }
+    .v-page [data-v-cue], .v-page .v-ki { opacity: 1 !important; transform: none !important; }
+    .v-page [data-v-reveal] { clip-path: none !important; }
+    .v-page .v-layer { transform: none !important; }
+    .sb { height: auto; }
+    .sb__rep { min-height: 0; display: grid; gap: var(--v-5); }
+    .sb__rep > div { position: static; max-width: none; }
+    .sb__after { margin-top: var(--v-4); }
+    .fan { margin-bottom: var(--v-4); }
+    .kc { position: relative; inset: auto; }
+    .kc__rep { min-height: 0; display: grid; gap: var(--v-5); }
+    .kc__rep > div { position: static; max-width: none; }
+  }
 </style>
 </head>
 <body>
